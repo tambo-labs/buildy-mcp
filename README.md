@@ -1,3 +1,5 @@
+<img src="buildy-icon.png" alt="Buildy" width="80" />
+
 # Buildy MCP Server
 
 Buildy is a hosted MCP server that generates, hosts, and updates interactive web apps. Connect it to any MCP-compatible AI client and ask it to build an app — you get back a live URL in seconds.
