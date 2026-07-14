@@ -65,7 +65,7 @@ It teaches the agent Charming's build contract and workflow. The skill itself is
 
 ### Cursor
 
-Cursor reads project rules from `.cursor/rules/`. Drop [`.cursor/rules/buildy.mdc`](./.cursor/rules/buildy.mdc) into your project (or copy its body into a legacy root `.cursorrules`) and Cursor's agent will reach for Buildy (real URL, storage, and inline rendering) whenever you ask for an app you want to keep. The rule points at the served docs; it does not duplicate the contract.
+Cursor reads project rules from `.cursor/rules/`. Drop [`.cursor/rules/charming.mdc`](./.cursor/rules/charming.mdc) into your project (or copy its body into a legacy root `.cursorrules`) and Cursor's agent will reach for Charming (real URL, storage, and inline rendering) whenever you ask for an app you want to keep. The rule points at the served docs; it does not duplicate the contract.
 
 ## Documentation
 
