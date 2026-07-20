@@ -11,6 +11,19 @@ Charming is a hosted MCP server that generates, hosts, and updates interactive w
 | Claude, Grok, Gemini, Perplexity | `https://charm.ing/mcp` |
 | ChatGPT | `https://charm.ing/mcp/chatgpt` (or the Charming listing in the ChatGPT Apps directory) |
 
+Most MCP clients can use this remote configuration:
+
+```json
+{
+  "mcpServers": {
+    "charming": {
+      "url": "https://charm.ing/mcp",
+      "type": "streamableHttp"
+    }
+  }
+}
+```
+
 OAuth with Dynamic Client Registration is automatic — clients that support it show a one-time consent screen.
 
 For per-client paste-strings and setup steps, see [usecharming.com/clients.txt](https://usecharming.com/clients.txt).
@@ -25,7 +38,7 @@ Help me figure out what to build. Look at what you know about me and suggest 2-3
 Read https://usecharming.com/start.md then help me create my first app.
 ```
 
-## MCP Tools
+## Tools
 
 Charming exposes 21 tools. Connected clients discover them automatically via `tools/list`.
 
@@ -55,11 +68,7 @@ Charming exposes 21 tools. Connected clients discover them automatically via `to
 
 ## Use with a coding agent
 
-Working in Codex, Claude Code, Cursor, or another AI coding agent? Install the Charming authoring skill from [skills.sh](https://www.skills.sh):
-
-```bash
-npx skills add tambo-labs/charming-mcp
-```
+Working in Codex, Claude Code, Cursor, or another AI coding agent? Install the optional Charming authoring skill from [skills.sh](https://www.skills.sh) with `npx skills add tambo-labs/charming-mcp`. This installs authoring guidance; it does not connect the MCP server.
 
 It teaches the agent Charming's build contract and workflow. The skill itself is [`SKILL.md`](./SKILL.md); [`AGENTS.md`](./AGENTS.md) has connect and authoring instructions for any AI coding agent. Codex users can instead install the bundled [Charming Codex plugin](https://github.com/tambo-labs/charming-codex-plugin).
 
